@@ -1,2 +1,16 @@
 #+TITLE: AoC2020
-Oliver Frank's Advent of Code 2020 programs, written in rust.
+#+AUTHOR: Oliver Frank
+
+2020's Advent of Code problems, written in the Rust programming language!  The only dependency is [[https://rustup.rs/][Rust]].  Enjoy! \\
+
+The problems can be found [[https://adventofcode.com/2020/][here]]. \\
+* Usage
+To run a particular program, clone the repository and run:
+#+BEGIN_EXAMPLE
+$ cargo -p prob<day>_<part>
+#+END_EXAMPLE
+
+For example, to run day 1 part 1, you would run:
+#+BEGIN_EXAMPLE
+$ cargo -p prob1_1
+#+END_EXAMPLE
