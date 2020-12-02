@@ -5,6 +5,86 @@ name = "aoc"
 version = "0.1.0"
 
 [[package]]
+name = "prob10_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob10_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob11_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob11_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob12_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob12_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob13_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob13_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob14_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob14_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob15_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob15_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob16_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob16_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob17_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob17_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob18_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob18_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob19_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob19_2"
+version = "0.1.0"
+
+[[package]]
 name = "prob1_1"
 version = "0.1.0"
 dependencies = [
@@ -17,3 +97,121 @@ version = "0.1.0"
 dependencies = [
  "aoc",
 ]
+
+[[package]]
+name = "prob20_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob20_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob21_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob21_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob22_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob22_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob23_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob23_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob24_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob24_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob25_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob25_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob2_1"
+version = "0.1.0"
+dependencies = [
+ "aoc",
+]
+
+[[package]]
+name = "prob2_2"
+version = "0.1.0"
+dependencies = [
+ "aoc",
+]
+
+[[package]]
+name = "prob3_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob3_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob4_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob4_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob5_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob5_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob6_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob6_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob7_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob7_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob8_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob8_2"
+version = "0.1.0"
+
+[[package]]
+name = "prob9_1"
+version = "0.1.0"
+
+[[package]]
+name = "prob9_2"
+version = "0.1.0"
