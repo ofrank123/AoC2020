@@ -8,7 +8,7 @@ fn main() {
 }
 
 fn solve() -> Option<i32> {
-    let input = aoc::input_to_str("1_1");
+    let input = aoc::input_to_str("1");
 
     let mut ints: Vec<i32> = Vec::new();
     for line in input.lines() {
