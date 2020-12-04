@@ -76,7 +76,6 @@ fn validate_passport(passport: Vec<&str>) -> bool {
                     }
                 }
 
-                //println!("{}: {} - {}", field_name, field_data, ret);
                 ret
             },
             "hcl" => {
@@ -105,7 +104,6 @@ fn validate_passport(passport: Vec<&str>) -> bool {
                     ret = 1;
                 }
 
-                println!("{}: {} - {}", field_name, field_data, ret);
                 ret
             }
             _ => 0,
