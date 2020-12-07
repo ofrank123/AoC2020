@@ -249,6 +249,9 @@ dependencies = [
 [[package]]
 name = "prob7_2"
 version = "0.1.0"
+dependencies = [
+ "aoc",
+]
 
 [[package]]
 name = "prob8_1"

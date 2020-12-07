@@ -3,10 +3,10 @@ extern crate aoc;
 use std::collections::HashSet;
 use std::hash::{Hash, Hasher};
 
-#[derive(Debug, Clone)]
+#[derive(Debug)]
 struct Bag {
     name: String,
-    contains: Vec<(i32, String)>,
+    contains: Vec<(i32, Bag)>,
 }
 
 impl PartialEq for Bag {
@@ -24,20 +24,20 @@ impl Hash for Bag {
 }
 
 impl Bag {
-    fn new(name: String, contains: Vec<(i32, String)>) -> Self {
+    fn new(name: String, contains: Vec<(i32, Bag)>) -> Self {
         Self {
             name,
             contains
         }
     }
 
-    fn get_parents(&self, bags: &HashSet<Bag>) -> HashSet<Bag> {
+    fn get_parents(&self, bags: HashSet<Bag>) -> HashSet<Bag> {
         let mut parents = HashSet::new();
         'outer: for bag in bags {
-            if self != bag {
+            if self == &bag {
                 for (_, child) in &bag.contains {
-                    if child == &self.name {
-                        parents.insert(bag.clone());
+                    if child == self {
+                        parents.insert(bag);
                         continue 'outer;
                     }
                 }
@@ -49,39 +49,8 @@ impl Bag {
 }
 
 fn main() {
-    let input = aoc::input_to_str("7");
-    //println!("{:?}", get_bag_set(&input));
-    let bags = get_bag_set(&input);
-
-    //println!("{:?}", bags.get(&Bag::new("shiny_gold".to_string(), vec![])));
-
-    let mut parents = bags.get(&Bag::new("shiny_gold".to_string(), vec![])).unwrap().get_parents(&bags);
-    //println!("{:?}", parents);
-
-    let mut old_size = parents.len();
-    loop {
-        let mut new_bags = HashSet::new();
-        for bag in &parents {
-            for add_bag in bag.get_parents(&bags) {
-                new_bags.insert(add_bag);
-            }
-        }
-
-        for bag in new_bags {
-            parents.insert(bag);
-        }
-
-        if old_size == parents.len() {
-            break;
-        }
-        old_size = parents.len();
-    }
-
-    for parent in &parents {
-        println!("Parent Bag: {}", parent.name);
-    }
-
-    println!("Result: {}", parents.len());
+    let input = aoc::input_to_str("7_test");
+    get_bag_set(&input);
 }
 
 fn get_bag_set(input: &str) -> HashSet<Bag> {
@@ -90,6 +59,7 @@ fn get_bag_set(input: &str) -> HashSet<Bag> {
     for line in input.lines() {
         let mut word_iter = line.split_whitespace().into_iter();
         let color = format!{"{}_{}", word_iter.next().unwrap(), word_iter.next().unwrap()};
+        println!("Color: {}", color);
         word_iter.next().expect("Expected bags");
         word_iter.next().expect("Expected contain");
 
@@ -106,7 +76,7 @@ fn get_bag_set(input: &str) -> HashSet<Bag> {
             next = word_iter.next();
         }
 
-        bags.insert(Bag::new(color, contains));
+        bags.insert(Bag {name: color, contains: contains});
     }
 
     bags
