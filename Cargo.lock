@@ -256,10 +256,16 @@ dependencies = [
 [[package]]
 name = "prob8_1"
 version = "0.1.0"
+dependencies = [
+ "aoc",
+]
 
 [[package]]
 name = "prob8_2"
 version = "0.1.0"
+dependencies = [
+ "aoc",
+]
 
 [[package]]
 name = "prob9_1"
