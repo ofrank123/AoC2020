@@ -56,10 +56,16 @@ dependencies = [
 [[package]]
 name = "prob12_1"
 version = "0.1.0"
+dependencies = [
+ "aoc",
+]
 
 [[package]]
 name = "prob12_2"
 version = "0.1.0"
+dependencies = [
+ "aoc",
+]
 
 [[package]]
 name = "prob13_1"
