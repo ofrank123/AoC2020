@@ -70,10 +70,16 @@ dependencies = [
 [[package]]
 name = "prob13_1"
 version = "0.1.0"
+dependencies = [
+ "aoc",
+]
 
 [[package]]
 name = "prob13_2"
 version = "0.1.0"
+dependencies = [
+ "aoc",
+]
 
 [[package]]
 name = "prob14_1"
